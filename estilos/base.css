@@ -20,12 +20,8 @@ header {
   text-align: center;
 }
 
-header span {
-  display: block;
+header p {
   padding: 1rem 2rem 0.5rem;
-}
-
-header span p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
