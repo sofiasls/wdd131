@@ -1,0 +1,119 @@
+/* ===== Reset & Base (mobile first) ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #2d2d2d;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4b1d6e;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.titulo-album {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* ===== Botão Hambúrguer ===== */
+#hamburguer {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* ===== Navegação (escondida por padrão no mobile) ===== */
+#nav-principal {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #4b1d6e;
+  z-index: 10;
+}
+
+#nav-principal.nav-aberto {
+  display: flex;
+}
+
+#nav-principal a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.9rem 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#nav-principal a:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ===== Main ===== */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #4b1d6e;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Galeria (CSS Grid) ===== */
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.galeria figure {
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.galeria figcaption {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #4b1d6e;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #4b1d6e;
+  color: #e8dcf2;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
