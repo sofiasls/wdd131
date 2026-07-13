@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagens Responsivas</title>
+  <meta name="description" content="Atividade de aprendizagem sobre imagens responsivas usando os elementos picture, source e o atributo srcset.">
+  <meta name="author" content="Sofia de S. Lazarini">
+  <link rel="stylesheet" href="estilos/imagens-responsivas.css">
+</head>
+<body>
+  <main>
+    <div class="principal">
+      <picture>
+        <source srcset="imagens/principal-grande.webp.webp" media="(min-width: 1000px)">
+        <source srcset="imagens/principal-media.webp.webp" media="(min-width: 500px)">
+        <img src="imagens/principal-pequena.webp.webp" alt="Paisagem de uma vila com igreja e lago, cercada por montanhas" width="1127" height="750">
+      </picture>
+    </div>
+  </main>
+</body>
+</html>
