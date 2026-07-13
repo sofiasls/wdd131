@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maldivas - Sofia de S. Lazarini</title>
+  <meta
+    name="description"
+    content="Página sobre as Maldivas: dados gerais do país e clima local, criada para o curso WDD 131."
+  >
+  <meta name="author" content="Sofia de S. Lazarini">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="estilos/local.css">
+  <script src="scripts/local.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Maldivas</h1>
+  </header>
+  <div class="faixa"></div>
+
+  <main>
+    <picture>
+      <source srcset="imagens/maldivas-grande.webp" media="(min-width: 1000px)">
+      <source srcset="imagens/maldivas-media.webp" media="(min-width: 500px)">
+      <img
+        src="imagens/maldivas-pequena.webp"
+        alt="Vista aérea de vilas sobre a água em um resort nas Maldivas, cercadas por lagoa turquesa e areia branca"
+        width="1800" height="1027"
+      >
+    </picture>
+
+    <section class="dados">
+      <h2>Dados</h2>
+      <div class="linha"><span class="rotulo">Área:</span><span class="valor">298 km²</span></div>
+      <div class="linha"><span class="rotulo">População:</span><span class="valor">521.457</span></div>
+      <div class="linha"><span class="rotulo">Capital:</span><span class="valor">Malé</span></div>
+      <div class="linha"><span class="rotulo">Idiomas:</span><span class="valor">Divehi, Inglês</span></div>
+      <div class="linha"><span class="rotulo">Moeda:</span><span class="valor">Rupia Maldiva</span></div>
+      <div class="linha"><span class="rotulo">Fuso Horário:</span><span class="valor">UTC+5</span></div>
+      <div class="linha"><span class="rotulo">Cód. Telefônico:</span><span class="valor">+960</span></div>
+      <div class="linha"><span class="rotulo">Domínio:</span><span class="valor">.mv</span></div>
+    </section>
+
+    <section class="clima">
+      <h2 class="titulo-clima">Clima</h2>
+      <img src="imagens/clima.svg" alt="Ícone de tempo parcialmente nublado" class="icone-clima">
+      <div class="linha"><span class="rotulo">Temperatura:</span><span class="valor">29 °C</span></div>
+      <div class="linha"><span class="rotulo">Condições:</span><span class="valor">Parcialmente Nublado</span></div>
+      <div class="linha"><span class="rotulo">Vento:</span><span class="valor">14 km/h</span></div>
+      <div class="linha"><span class="rotulo">Sensação Térmica:</span><span class="valor" id="sensacao-termica"></span></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="anoatual"></span> Sofia de S. Lazarini &mdash; Maldivas</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+
+</body>
+</html>
