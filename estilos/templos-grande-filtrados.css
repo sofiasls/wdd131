@@ -1,0 +1,23 @@
+@media screen and (min-width: 700px) {
+  /* O hambúrguer só aparece na visualização móvel */
+  #hamburguer {
+    display: none;
+  }
+
+  /* Nav volta a ficar visível e em linha na visualização maior */
+  #nav-principal {
+    display: flex;
+    flex-direction: row;
+    position: static;
+  }
+
+  #nav-principal a {
+    border-top: none;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Galeria com várias colunas usando repeat, auto-fit e minmax */
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}

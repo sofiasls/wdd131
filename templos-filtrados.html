@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbum de Templos Filtrados - Sofia de S. Lazarini</title>
+  <meta name="description" content="Álbum de templos com filtragem dinâmica por idade e tamanho, cartões gerados via JavaScript e carregamento lento de imagens.">
+  <meta name="author" content="Sofia de S. Lazarini">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/templos-filtrados.css">
+  <link rel="stylesheet" href="estilos/templos-grande-filtrados.css">
+  <script src="scripts/templos-dados.js" defer></script>
+  <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <p class="titulo-album">Álbum do Templo</p>
+    <button id="hamburguer" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="nav-principal">
+      <a href="#" data-filtro="todos" class="ativo">Home</a>
+      <a href="#" data-filtro="antigos">Old</a>
+      <a href="#" data-filtro="novos">New</a>
+      <a href="#" data-filtro="grandes">Large</a>
+      <a href="#" data-filtro="pequenos">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="titulo-secao">Página Inicial</h1>
+
+    <div class="galeria" id="galeria-templos">
+      <!-- Cartões de templo gerados dinamicamente via JavaScript (scripts/templos-filtrados.js) -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="anoatual"></span> 🤩Sofia de S. Lazarini🤩 &mdash; Hortolândia -SP, Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+
+</body>
+</html>
