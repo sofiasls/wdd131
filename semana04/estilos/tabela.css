@@ -1,0 +1,90 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #2d2d2d;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #1e3a5f;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+/* ===== Main ===== */
+main {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ===== Tabela ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+caption {
+  caption-side: bottom;
+  padding: 0.8rem 0;
+  font-size: 0.95rem;
+  color: #444444;
+}
+
+thead .titulo-empresa {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 0.8rem 1rem;
+}
+
+thead tr:nth-child(2) th {
+  background-color: #4d4d4d;
+  color: #ffffff;
+  padding: 0.7rem 1rem;
+  text-align: center;
+}
+
+thead tr:nth-child(2) th.canto {
+  background-color: #000000;
+}
+
+tbody th {
+  text-align: left;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+}
+
+tbody td {
+  text-align: center;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+}
+
+/* Listras de zebra */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #1e3a5f;
+  color: #cccccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+}
